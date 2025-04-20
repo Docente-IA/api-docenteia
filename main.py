@@ -17,4 +17,4 @@ def consulta_ia():
         temperature=0.7
     )
 
-    return jsonify(response.choices[0].message)
+    return jsonify({"respuesta": response.choices[0].message.content})
